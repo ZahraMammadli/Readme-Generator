@@ -16,14 +16,12 @@ inquirer
       name: "description",
     },
   ])
-  .then((answers) => {
-    let title = answers.title;
-    let description = answers.description;
-    console.log(title);
-    fs.writeFileSync("README.md", readmeGenerator(title, description));
-  });
+  .then((answers) => fs.writeFileSync("README.md", readmeGenerator(answers)))
+  .then(() => console.log("Successfully wrote to README.md"))
+  .catch((err) => console.error(err));
 
-const readmeGenerator = ({ title, description }) => `#${title}
+const readmeGenerator = ({ title, description }) => `
+    #${title}
     ##Description
     ${description}
     `;
