@@ -38,14 +38,15 @@ inquirer
     {
       type: "list",
       message: "Please choose licence from the list",
-      name: "test",
-      choices: ["MIT", "Apache", "GNU", "Mozilla Public", "Eclipse"],
+      name: "license",
+      choices: ["MIT", "GPLv3", "GPL", "Apache"],
     },
   ])
   .then((answers) => fs.writeFileSync("README.md", readmeGenerator(answers)))
   .then(() => console.log("Successfully wrote to README.md"))
   .catch((err) => console.error(err));
 
+//  Function to create template readme file using inputs
 const readmeGenerator = ({
   title,
   description,
@@ -73,5 +74,23 @@ const readmeGenerator = ({
     ${test}
 
     ##License
-    ${license}
+    ${licensebadge(license)}
     `;
+
+// Function to create badges
+
+const licensebadge = (license) => {
+  let badge = "";
+  if ((license = "MIT")) {
+    badge = `![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)`;
+  } else if ((license = "GPLv3")) {
+    badge = `![GPLv3 license](https://img.shields.io/badge/License-GPLv3-blue.svg)`;
+  } else if (license === "GPL") {
+    badge = `![GPL license](https://img.shields.io/badge/License-GPL-blue.svg)`;
+  } else if (license === "Apache") {
+    badge = `![Apache license](https://img.shields.io/badge/License-Apache_2.0-blue.svg)]`;
+  } else {
+    license = "N/A";
+  }
+  return badge;
+};
