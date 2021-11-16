@@ -3,12 +3,15 @@ const fs = require("fs");
 
 // Promting user to generate answers
 
-const promptUser = () => {
-  return inquirer.prompt([
+inquirer
+  .prompt([
     {
       type: "input",
+      message: "What is your project title??",
       name: "title",
-      message: "What is your project title?",
     },
-  ]);
-};
+  ])
+  .then((answers) => {
+    let title = answers.title;
+    console.log(title);
+  });
