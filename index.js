@@ -18,15 +18,12 @@ inquirer
   ])
   .then((answers) => {
     let title = answers.title;
+    let description = answers.description;
     console.log(title);
-    let readmefile = readmeGenerator(answers);
-    fs.writeFileSync("README.md",readmefile)
-    
+    fs.writeFileSync("README.md", readmeGenerator(title, description));
   });
 
-const readmeGenerator = ({ title, description }) => {
-  `#${title}
-
-    ##${description}
+const readmeGenerator = ({ title, description }) => `#${title}
+    ##Description
+    ${description}
     `;
-};
