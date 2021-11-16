@@ -1,28 +1,14 @@
-/**
- * Checkbox list examples
- */
-
-"use strict";
 const inquirer = require("inquirer");
+const fs = require("fs");
 
-inquirer
-  .prompt([
+// Promting user to generate answers
+
+const promptUser = () => {
+  return inquirer.prompt([
     {
       type: "input",
-      message: "Enter a title",
       name: "title",
+      message: "What is your project title?",
     },
-    {
-      type: "input",
-      message: "Enter a github Username",
-      name: "github",
-    },
-  ])
-  .then(function (answers) {
-    let readmeContent = `![Username] ${answers.github}`;
-    console.log(readmeContent);
-  });
-
-// .then((answers) => {
-//   console.log(JSON.stringify(answers, null, "  "));
-// });
+  ]);
+};
