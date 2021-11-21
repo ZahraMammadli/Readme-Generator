@@ -30,7 +30,7 @@
     MIT license was utilised for the this project.
 
     ##Questions
-    If you have any questions feel to reach checkout my github profile
+    If you have any questions feel to checkout my github profile
     https://github.com/ZahraMammadli
     or reach me out via the email:
     zahra.mrj@gmail.com
