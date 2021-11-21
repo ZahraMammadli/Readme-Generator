@@ -1,9 +1,9 @@
 
-    #Readme Generator
+    #ReadMe Generator
     ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
 
     ##Description
-    The Readme file is often the first file which the users read. It is a text file that contains the information for the user about the software, project, code, game, or it might contain instructions, help, or details about the patches or updates. The Readme file is used to explain what is uploaded and how we can install and use it. It even allows the uplpoaded to add images and videos that help reader to navigate through the project
+    The Readme file is often the first file which the users read. It is a text file that contains the information for the user about the software, project, code, game, or it might contain instructions, help, or details about the patches or updates.  The readme file is used to explain what is uploaded and how we can install or use it. nodeA well-written readme file is more important if you intend to show these projects in your resume. This command line application allows you automatically create a readme file, reduce time and keep in well structured for all of your projects. 
 
     ##Table of Content
     - [Installation](#Installation)
@@ -14,7 +14,7 @@
     - [Questions](#Questions)
 
     ##Installation guidelines
-    Please clone the repository called “Readme-Generator” and run npm install in your terminal in order to install necessary package, in this case it is “inquirer”.
+    Please clone the repository called “Readme-Generator” and run npm install in your terminal in order to install necessary package, in this case it is “inquirer”. 
 
     ##Usage
     Once you have installed inquirer package using npm install you need to run application by typing node index.js in your terminal. You will promoted with series of questions that will contribute to README file formation. Moreover, you will be provided with options of licenses to choose and once done, badge of selected license will be added near the top of Readme and displayed in respective section of your readme file. Once you will answer all questions the README file will be automatically generated. 
@@ -30,7 +30,7 @@
 
     ##Questions
     If you have any questions feel to reach checkout my github profile
-     https://github.com/ZahraMammadli
+    https://github.com/ZahraMammadli
     or reach me out via the email:
     zahra.mrj@gmail.com
     
