@@ -88,17 +88,17 @@ const readmeGenerator = ({
     ##Usage
     ${usage}
 
-    ##Contribution 
+    ##Contribution
     ${contribution}
 
     ##Testing
     ${test}
 
     ##License
-    ${icense}
+    ${license} license was utilised for the this project. 
 
     ##Questions
-    If you have any questions feel to reach checkout my github profile 
+    If you have any questions feel to reach checkout my github profile
     ${github}
     or reach me out via the email:
     ${email}
