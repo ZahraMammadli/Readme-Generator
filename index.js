@@ -68,41 +68,41 @@ const readmeGenerator = ({
   github,
   email,
 }) => `
-    #${title}
-    ${licensebadge(license)}
+#${title}
+${licensebadge(license)}
 
-    ##Description
-    ${description}
+##Description
+${description}
 
-    ##Table of Content
-    - [Installation](#Installation)
-    - [Usage](#Usage)
-    - [Contribution](#Contribution)
-    - [Testing](#Testing)
-    - [License](#License)
-    - [Questions](#Questions)
+##Table of Content
+- [Installation](#Installation)
+- [Usage](#Usage)
+- [Contribution](#Contribution)
+- [Testing](#Testing)
+- [License](#License)
+- [Questions](#Questions)
 
-    ##Installation guidelines
-    ${installation}
+##Installation guidelines
+${installation}
 
-    ##Usage
-    ${usage}
+##Usage
+${usage}
 
-    ##Contribution
-    ${contribution}
+##Contribution
+${contribution}
 
-    ##Testing
-    ${test}
+##Testing
+${test}
 
-    ##License
-    ${license} license was utilised for the this project. 
+##License
+${license} license was utilised for the this project. 
 
-    ##Questions
-    If you have any questions feel to reach checkout my github profile
-    ${github}
-    or reach me out via the email:
-    ${email}
-    `;
+##Questions
+If you have any questions feel to reach checkout my github profile
+${github}
+or reach me out via the email:
+${email}
+`;
 
 // Function to create badges
 
